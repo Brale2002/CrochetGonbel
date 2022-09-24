@@ -1,0 +1,21 @@
+<header>
+        <div class="lista">
+            <a href="">Productos</a>
+            <a href="">Sobre nosotros</a>
+            <a href="">Iniciar sesión</a>
+            <a href="">registrarse</a>
+        </div>
+        <div class="logo">
+            <div>
+                <h2>Crochet<b>Gonbel</b></h2>
+            </div>
+        </div>
+        </div>
+    </header>
+
+------------------------------------------------------------------------------------------------------------------
+
+<footer>
+        <div id="copy"><p>&copy;2017 all rights reserved by Syed Miraj.</p>
+        <p>crochetgonbel@gmail.com</p></div>
+    </footer>

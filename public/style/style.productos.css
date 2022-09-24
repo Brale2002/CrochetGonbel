@@ -1,0 +1,470 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:Arial, Helvetica, sans-serif ;
+ }
+
+body{
+  background-color: rgb(235, 228, 225);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: 100% 5%;
+}
+
+header{
+  display: grid;
+  grid-template-areas: "area1 area2 area2  area2 area3";
+  height: 80px;
+  background-color:rgb(131, 91, 81);
+  margin: 50px;
+  margin-bottom: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+a h2{
+  font-size: 20px;
+}
+
+.lista{
+  grid-area: area2;
+  border: #fff solid 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  grid-area: area1;
+  border: #fff solid 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#fw{
+color: #fff;
+font-family: cursive;
+}
+
+.carrito{
+  grid-area: area3;
+  border: #fff solid 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carrito img{
+width: 30px;
+height: 30px;
+}
+
+.todore{
+  display: grid;
+  grid-template-areas: 
+  "t t t"
+  "l p p";
+  margin: 0 50px 0px 50px;
+}
+
+.titulow{
+  grid-area: t;
+  background-color:rgb(131, 91, 81);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 40px;
+  color: #fff;
+  width: 100%;
+}
+
+.pgrande p{
+  color: #835B51;
+  font-size: 30px;
+  font-family: cursive;
+}
+
+.estilo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.estilo, .color, .tamaño {
+  color: #835B51;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+  font-size: 15px;
+}
+
+.filtro{
+  grid-area: l;
+  width: 200px;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.filtro li{
+  list-style: none;
+}
+
+.compra{
+  grid-area: p;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.cuadros{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 455px;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.tarjeta1{
+  grid-column: 1/2;
+}
+
+.tarjeta2{
+  grid-column: 2/3;
+}
+
+.tarjeta3{
+  grid-column: 3/4;
+}
+
+.tarjeta4{
+  grid-column: 4/5;
+}
+
+.tarjeta5{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.tarjeta6{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.tarjeta7{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.tarjeta8{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.cuadro{
+  display: grid;
+  grid-template-areas: 
+  "a a"
+  "c c"
+  "b b";
+  text-align: center;
+  gap: 10px;
+}
+
+.titulo{
+  grid-area: c;
+}
+
+.imagen{
+  grid-area: a;
+}
+
+.imagen img {
+  width: 234px;
+  height: 387px;
+}
+
+.precio{
+  grid-area: b;
+}
+
+.registrocj{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(235, 228, 225);
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cajaregistro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/crochet/image/upload/v1663993128/crochet/ghgh_i1ydco.jpg");
+  width: 90%;
+  height: 100px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px 250px;
+  color: #fff;
+}
+
+.cajaregistro p{
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.caja{
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+}
+
+footer{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(235, 228, 225);
+}
+
+.contenidof{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+}
+
+.comparte h4{
+  color: #835B51;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.comparte p{
+  color: #835B51;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+.copy{
+  color: #835B51;
+  font-size: 15px;
+  font-family: cursive;
+}
+
+footer hr{
+  margin: 50px;
+  margin-bottom: 0;
+}
+
+/*-----------------------------COLECCION------------------------------------------------------*/
+
+.colecciones{
+  display: grid;
+  grid-template-areas: 
+  "c1 c1"
+  "c2 c2"
+  "c3 c3";
+}
+
+.rocas{
+  height: 552px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid-area: c1;
+    margin-bottom: 86px;
+}
+
+.textoRocas{
+  width: 40%;
+  height: 263px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+#grande{
+font-size: 50px;
+}
+
+.textoRocas p{
+width: 500px;
+color: #835B51;
+font-family: cursive;
+}
+
+#btn_rocas{
+width: 150px;
+height: 50px;
+background-color: transparent;
+color: #835B51;
+border-color: #fff;
+border-color: #835B51;
+}
+
+.imgRocas{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.backRocas{
+  height: 500px;
+  width: 705px;
+  background-image: url(https://res.cloudinary.com/crochet/image/upload/v1664043078/crochet/250314-1600x1030-entendiendo-filosofia-yin-yang_r02k73.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 312px 0px;
+}
+
+.backRocas img {
+  width: 332px;
+  height: 342px;
+}
+
+.sol{
+  height: 552px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid-area: c2;
+    margin-bottom: 86px;
+}
+
+.textosol{
+  width: 40%;
+  height: 263px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+#grande{
+font-size: 50px;
+}
+
+.textosol p{
+width: 500px;
+color: #835B51;
+font-family: cursive;
+}
+
+#btn_sol{
+width: 150px;
+height: 50px;
+background-color: transparent;
+color: #835B51;
+border-color: #fff;
+border-color: #835B51;
+}
+
+.imgsol{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.backsol{
+  height: 500px;
+  width: 705px;
+  background-image: url(https://res.cloudinary.com/crochet/image/upload/v1664044043/crochet/hawaii-puesta-de-sol_3840x2400_xtrafondos.com_jql6ha.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px 0px;
+}
+
+.backsol img {
+  width: 332px;
+  height: 342px;
+}
+
+.luna{
+  height: 552px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    grid-area: c3;
+    margin-bottom: 86px;
+}
+
+.textoluna{
+  width: 40%;
+  height: 263px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+#grande{
+font-size: 50px;
+}
+
+.textoluna p{
+width: 500px;
+color: #835B51;
+font-family: cursive;
+}
+
+#btn_luna{
+width: 150px;
+height: 50px;
+background-color: transparent;
+color: #835B51;
+border-color: #fff;
+border-color: #835B51;
+}
+
+.imgluna{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40%;
+}
+
+.backluna{
+  height: 500px;
+  width: 705px;
+  background-image: url(https://res.cloudinary.com/crochet/image/upload/v1664044228/crochet/cielo-estratosfera-estrellas-luna-wallpaper-preview_pgreua.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 312px 0px;
+}
+
+.backluna img {
+  width: 332px;
+  height: 342px;
+}
+
+.aunno{
+  width: 92.2%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 50px;
+  border: rgb(87, 87, 87) dashed 2px;
+}

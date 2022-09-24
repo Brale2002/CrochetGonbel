@@ -1,0 +1,72 @@
+.padre {
+  display: grid;
+  grid-template-areas:
+    "zona1 zona2 zona3 zona3"
+    "zona4 zona2 zona7 zona8"
+    "zona5 zona6 zona7 zona9"
+    "zona10 zona10 zona10 zona10";
+  ;
+  grid-gap: 20px;
+  width: 100vw;
+  height: 100vh;
+
+
+}
+
+.x1 {
+  background-image: url("../img/lillia.jpg");
+  grid-area: zona1;
+}
+
+.x2 {
+  grid-area: zona4;
+  background-image: url("../img/kindred.jpg");
+  background-size: cover;
+}
+
+.x3 {
+  grid-area: zona5;
+  background-image: url("../img/cassiopeia.jpg");
+}
+
+.x4 {
+  grid-area: zona2;
+  background-image: url("../img/dbbaa1e7e561e5dcb78b2281852e85ec.jpg");
+  background-position: 0 -400px;
+  background-size: cover;
+}
+
+.x5 {
+  grid-area: zona6;
+  background-image: url("../img/teemo.jpg");
+  background-size: cover;
+}
+
+.x6 {
+  grid-area: zona3;
+  background-image:url("../img/riven.jpg")
+}
+
+.x7 {
+  grid-area: zona7;
+  background-image:url("../img/vayne.jpg");
+  background-size: cover;
+  background-position: -1000px;
+}
+
+.x8 {
+  grid-area: zona8;
+  background-image: url("../img/yasuo.jpg");
+  background-size: cover;
+}
+
+.x9 {
+  grid-area: zona9;
+  background-image: url("../img/yone.jpg");
+  background-size: cover;
+}
+.x10 {
+  grid-area: zona10;
+  background-image: url("../img/Spirit_Blossom_Thresh.jpg");
+  background-size: cover;
+}
