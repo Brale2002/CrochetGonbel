@@ -20,7 +20,16 @@
         </div>
         <div class="lista">
             <a href="/">inicio</a>
+
+            <% if (conectado==false) { %>
             <a href="/login">Iniciar sesión</a>
+            <% } %>
+
+            <% if (conectado) { %>
+               <a href=""> <%= nombre %>  </a>
+
+               <a href="/logout"> cerrar sesion  </a>
+            <% } %>
             <a href="/coleccion">Colección</a>
             <a href="">Contactanos</a>
         </div>
@@ -72,30 +81,55 @@
           </ul>
         </div>
         <hr>
+
+
+
+
+
     </section>
-    <section class="compra">  
+    <section class="compra">
+    <% tt.forEach((producto)=> { %> 
+    
+      
             <div class="cuadro">
               <div class="titulo">
-                <h3>Croptop</h3>
+                <h3> <%= producto.nombre_producto %>  </h3>
               </div>
               <div class="imagen">
-                  <img src="https://res.cloudinary.com/crochet/image/upload/v1662378997/crochet/descarga_ncno1c.jpg" alt="">
+                  <img src="<%= producto.imagen %>" alt="">
               </div>
               <div class="precio">
-                <p>150$</p>
+                <p> <%= producto.precio %> </p>
+                
+                <form action="/comprar/<%= producto.id_producto %>">
+
+                <button> comprar</button>
+
+                 </form>
+
               </div>
             </div>
-    </section>
-  </div>
-  </div>
+ 
+  <% })  %> 
+</section>
 
+
+
+
+
+
+
+
+  </div>
+  </div>
+<%  if(conectado==false) {%>
   <section class="registrocj">
     <div class="cajaregistro">
         <p>Registrate para recibir notificaciones</p>
         <a href="/login"><button class="caja">Registrarse</button></a>
     </div>
 </section>
-
+<% } %>
   <footer>
     <a href="footer"></a>
     <hr>
